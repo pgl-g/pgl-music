@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { memo } from 'react'
 
-export default function App() {
-    return (
-      <div>
-        xxx
-      </div>
-    )
-}
+export default memo(function app() {
+  return (
+    <div>
+      xxx
+    </div>
+  )
+})
