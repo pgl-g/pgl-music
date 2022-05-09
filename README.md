@@ -4,3 +4,4 @@
  3. 重置css，以及公共css的抽取
  4. 配置引入别名craco插件
  5. 配置项目路由react-router-dom@5版本 react-router-config
+ 6. 头部样式配置styled-componets(插件)

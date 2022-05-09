@@ -1,12 +1,11 @@
 import React, { memo } from 'react';
-import { NavLink } from 'react-router-dom';
+import { HeaderWrapper } from './style';
 
 export default memo(function PglHeader() {
   return (
-    <div>
-      <NavLink to="/">dsicover</NavLink>
-      <NavLink to="/mine">mine</NavLink>
-      <NavLink to="/friend">friend</NavLink>
-    </div>
+    <HeaderWrapper>
+      <div className="content wrap-v1"></div>
+      <div className="divider"></div>
+    </HeaderWrapper>
   )
 })
