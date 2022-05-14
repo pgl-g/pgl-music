@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-
+import { renderRoutes } from 'react-router-config';
 import { NavLink } from 'react-router-dom';
 
 import { dicoverMenu } from "@/common/local-data";
@@ -9,7 +9,9 @@ import {
   TopMenu
 } from './style';
 
-export default memo(function PglDiscover() {
+export default memo(function PglDiscover(props) {
+  const { route } = props;
+
   return (
     <DiscoverWrapper>
       <div className="top">
@@ -25,6 +27,7 @@ export default memo(function PglDiscover() {
         }
       </TopMenu>
       </div>
+      {renderRoutes(route.routes)}
     </DiscoverWrapper>
   )
 })
