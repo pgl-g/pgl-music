@@ -8,7 +8,7 @@ const routes = [
   {
     path: "/",
     exact: true,
-    render: () => <Redirect to="/mine" />
+    render: () => <Redirect to="/discover" />
   },
   {
     path: "/discover",
