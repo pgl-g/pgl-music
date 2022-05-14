@@ -1,12 +1,18 @@
+import React from 'react';
 import PglMine from '../pages/mine';
 import PglDiscover from '../pages/discover';
 import PglFirends from '../pages/firends';
+import { Redirect } from 'react-router-dom';
 
 const routes = [
   {
     path: "/",
     exact: true,
-    component: PglDiscover
+    render: () => <Redirect to="/mine" />
+  },
+  {
+    path: "/discover",
+    component: PglDiscover,
   },
   {
     path: "/mine",
